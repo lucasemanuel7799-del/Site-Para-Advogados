@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+/* === Personalização da Barra de Rolagem (Scrollbar) === */
+@layer base {
+  
+  /* Chrome, Safari, Edge */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #0c0a09; /* stone-950 */
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #292524; /* stone-800 */
+    border-radius: 5px;
+    border: 2px solid #0c0a09; /* Cria um respiro entre a barra e o fundo */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #b45309; /* amber-700 (Dourado ao passar o mouse) */
+  }
+
+  /* Firefox */
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: #292524 #0c0a09;
+  }
+}
